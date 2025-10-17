@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社 長浜合成工業所 - プラスチック精密部品・金型の製造</title>
+    <meta name="description" content="プラスチック精密部品の製造・金型設計を行う長浜合成工業所。確かな技術で未来のプラスチックを創造します。">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="smooth-scroll">
+    
+    <!-- ヘッダー -->
+    <header class="fixed top-0 w-full bg-white shadow-lg z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- ロゴ -->
+                <div class="text-xl font-bold text-blue-800">
+                    <h1>株式会社 長浜合成工業所</h1>
+                </div>
+                
+                <!-- ナビゲーション -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors">ホーム</a>
+                    <a href="#jigyo" class="text-gray-700 hover:text-blue-600 transition-colors">事業紹介</a>
+                    <a href="#kaisya" class="text-gray-700 hover:text-blue-600 transition-colors">会社情報</a>
+                    <a href="#saiyo" class="text-gray-700 hover:text-blue-600 transition-colors">採用情報</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">お問い合わせ</a>
+                </nav>
+                
+                <!-- モバイルメニューボタン -->
+                <button class="md:hidden" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl text-gray-700"></i>
+                </button>
+            </div>
+            
+            <!-- モバイルメニュー -->
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200">
+                <div class="flex flex-col space-y-4 mt-4">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors">ホーム</a>
+                    <a href="#jigyo" class="text-gray-700 hover:text-blue-600 transition-colors">事業紹介</a>
+                    <a href="#kaisya" class="text-gray-700 hover:text-blue-600 transition-colors">会社情報</a>
+                    <a href="#saiyo" class="text-gray-700 hover:text-blue-600 transition-colors">採用情報</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors text-center">お問い合わせ</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ホームセクション -->
+    <section id="home" class="pt-20">
+        <!-- メインビジュアル -->
+        <div class="relative h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-600 flex items-center justify-center text-white">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="absolute inset-0">
+                <img src="images/factory-interior.jpg" alt="長浜合成工業所の工場内部" class="w-full h-full object-cover opacity-30">
+            </div>
+            <div class="relative text-center px-4 max-w-4xl">
+                <h2 class="text-4xl md:text-6xl font-bold mb-6">
+                    確かな技術で、<br>未来のプラスチックを創造する
+                </h2>
+                <p class="text-xl md:text-2xl mb-8 font-light">
+                    企画・開発から量産まで。長年のノウハウで<br>高品質なプラスチック精密部品・金型を提供します。
+                </p>
+                <a href="#jigyo" class="inline-block bg-white text-blue-800 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                    事業内容を見る <i class="fas fa-arrow-down ml-2"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- 事業内容への誘導エリア -->
+        <div class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h3 class="text-3xl font-bold text-center mb-16 text-gray-800">事業内容</h3>
+                <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    <!-- カード1: プラスチック精密部品成形加工 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="h-64 overflow-hidden">
+                            <img src="images/precision-manufacturing.jpg" alt="プラスチック精密部品成形加工" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold mb-4 text-gray-800">プラスチック精密部品 成形加工</h4>
+                            <p class="text-gray-600 mb-6">
+                                OA・情報通信機器、住宅設備関連、医療機器、自動車関連等の精密部品を熱可塑性樹脂にて成形加工をしています。
+                            </p>
+                            <a href="#jigyo" class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                                → 詳しく見る
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- カード2: プラスチック金型設計・製作 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <div class="h-64 overflow-hidden">
+                            <img src="images/mold-design.jpg" alt="プラスチック金型設計・製作" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold mb-4 text-gray-800">プラスチック金型 設計・製作</h4>
+                            <p class="text-gray-600 mb-6">
+                                お客様よりいただいた製品図にもとづき、量産性に優れた金型を設計。3D-CAD/CAMを駆使し、高精度な金型を製作しています。
+                            </p>
+                            <a href="#jigyo" class="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                                → 詳しく見る
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 強みエリア -->
+        <div class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <h3 class="text-3xl font-bold text-center mb-16 text-gray-800">長浜合成工業所の強み</h3>
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- 強み1: 一貫生産体制 -->
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-industry text-3xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-gray-800">一貫生産体制</h4>
+                        <p class="text-gray-600">
+                            製品の企画・開発段階から、金型設計・製作、成形、二次加工、組立まで、社内一貫生産が可能です。
+                        </p>
+                    </div>
+
+                    <!-- 強み2: 徹底した品質管理 -->
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-shield-alt text-3xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-gray-800">徹底した品質管理</h4>
+                        <p class="text-gray-600">
+                            ISO9001を認証取得。三次元測定器をはじめとする各種測定器で、お客様の要求品質にお応えします。
+                        </p>
+                    </div>
+
+                    <!-- 強み3: 豊富な実績とノウハウ -->
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-cog text-3xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-gray-800">豊富な実績とノウハウ</h4>
+                        <p class="text-gray-600">
+                            創業以来、様々な分野のプラスチック製品に携わってきました。長年の経験で培ったノウハウでお客様の課題を解決します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 事業紹介セクション -->
+    <section id="jigyo" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-20 text-gray-800">事業紹介</h2>
+
+            <!-- 事業内容1: プラスチック精密部品成形加工 -->
+            <div class="mb-20">
+                <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800">プラスチック精密部品 成形加工</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            OA・情報通信機器、住宅設備関連、医療機器、自動車関連等の精密部品を熱可塑性樹脂にて成形加工をしています。汎用プラスチックからスーパーエンプラまで様々な材質に対応しており、インサート成形、フープ成形、クリーンルーム（クラス100,000）での成形も可能です。
+                        </p>
+                    </div>
+                    <div class="h-80 rounded-lg overflow-hidden">
+                        <img src="images/quality-control.jpg" alt="プラスチック精密部品の品質管理" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 事業内容2: プラスチック金型設計・製作 -->
+            <div class="mb-20">
+                <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                    <div class="order-2 md:order-1 h-80 rounded-lg overflow-hidden">
+                        <img src="images/mold-design.jpg" alt="プラスチック金型設計・製作" class="w-full h-full object-cover">
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800">プラスチック金型 設計・製作</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            お客様よりいただいた製品図にもとづき、量産性に優れた金型を設計。3D-CAD/CAMを駆使し、高精度な金型を製作しています。また、海外（中国）での金型製作も行っており、お客様のニーズに合わせたご提案が可能です。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 主要設備 -->
+            <div class="max-w-6xl mx-auto">
+                <h3 class="text-2xl font-bold mb-8 text-gray-800 text-center">主要設備</h3>
+                <div class="overflow-x-auto bg-white rounded-lg shadow-lg">
+                    <table class="w-full table-auto">
+                        <thead class="bg-blue-600 text-white">
+                            <tr>
+                                <th class="px-4 py-3 text-left">分類</th>
+                                <th class="px-4 py-3 text-left">メーカー</th>
+                                <th class="px-4 py-3 text-left">型式</th>
+                                <th class="px-4 py-3 text-center">台数</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3">電動式射出成形機</td>
+                                <td class="px-4 py-3">FANUC</td>
+                                <td class="px-4 py-3">α-S150iA</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3">電動式射出成形機</td>
+                                <td class="px-4 py-3">FANUC</td>
+                                <td class="px-4 py-3">α-S100iA</td>
+                                <td class="px-4 py-3 text-center">3</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3">電動式射出成形機</td>
+                                <td class="px-4 py-3">FANUC</td>
+                                <td class="px-4 py-3">α-S50iA</td>
+                                <td class="px-4 py-3 text-center">4</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3">電動式射出成形機</td>
+                                <td class="px-4 py-3">住友</td>
+                                <td class="px-4 py-3">SE50DUZ</td>
+                                <td class="px-4 py-3 text-center">2</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3">油圧式射出成形機</td>
+                                <td class="px-4 py-3">東芝</td>
+                                <td class="px-4 py-3">IS-80GN</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3">油圧式射出成形機</td>
+                                <td class="px-4 py-3">東芝</td>
+                                <td class="px-4 py-3">IS-55GS</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3">縦型射出成形機</td>
+                                <td class="px-4 py-3">FANUC</td>
+                                <td class="px-4 py-3">α-S30iA-V</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3">NCフライス盤</td>
+                                <td class="px-4 py-3">大阪機工</td>
+                                <td class="px-4 py-3">MCH-450</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3">マシニングセンター</td>
+                                <td class="px-4 py-3">FANUC</td>
+                                <td class="px-4 py-3">α-T21iEL</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3">ワイヤーカット放電加工機</td>
+                                <td class="px-4 py-3">FANUC</td>
+                                <td class="px-4 py-3">α-1iC</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3">NC放電加工機</td>
+                                <td class="px-4 py-3">ソディック</td>
+                                <td class="px-4 py-3">AP-1</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3">成形研削盤</td>
+                                <td class="px-4 py-3">住友</td>
+                                <td class="px-4 py-3">GSP-DX600</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3">三次元測定器</td>
+                                <td class="px-4 py-3">ミツトヨ</td>
+                                <td class="px-4 py-3">CSL-454</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3">画像寸法測定器</td>
+                                <td class="px-4 py-3">キーエンス</td>
+                                <td class="px-4 py-3">IM-6120</td>
+                                <td class="px-4 py-3 text-center">1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 会社情報セクション -->
+    <section id="kaisya" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-20 text-gray-800">会社情報</h2>
+
+            <!-- ごあいさつ -->
+            <div class="mb-20">
+                <div class="max-w-6xl mx-auto">
+                    <h3 class="text-2xl font-bold mb-8 text-gray-800 text-center">ごあいさつ</h3>
+                    <div class="grid md:grid-cols-3 gap-8 items-center">
+                        <div class="flex justify-center">
+                            <div class="w-48 h-48 rounded-lg overflow-hidden">
+                                <img src="images/business-meeting.jpg" alt="代表取締役 長濵 孝" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="md:col-span-2">
+                            <p class="text-gray-600 leading-relaxed mb-6">
+                                当社はプラスチック精密部品成形加工・プラスチック金型設計製作を主たる業務として、お客様のニーズにお応えすべく、品質、コスト、納期はもとより、VA・VE提案等、積極的に行っております。変化の激しい時代ではございますが、常にお客様にご満足いただける製品造りを社員一丸となって取り組んでまいりますので、より一層のご支援、ご指導を賜りますようお願い申し上げます。
+                            </p>
+                            <p class="font-semibold text-gray-800">
+                                株式会社 長浜合成工業所<br>
+                                代表取締役 長濵 孝
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 会社概要と沿革のタブ -->
+            <div class="max-w-6xl mx-auto">
+                <div class="flex border-b border-gray-200 mb-8">
+                    <button id="tab-overview" class="tab-button px-6 py-3 font-semibold border-b-2 border-blue-600 text-blue-600">会社概要</button>
+                    <button id="tab-history" class="tab-button px-6 py-3 font-semibold text-gray-600 hover:text-blue-600 transition-colors">沿革</button>
+                </div>
+
+                <!-- 会社概要タブの内容 -->
+                <div id="overview-content" class="tab-content">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <table class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr>
+                                        <td class="px-4 py-3 bg-gray-50 font-semibold">商号</td>
+                                        <td class="px-4 py-3">株式会社 長浜合成工業所</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 bg-gray-50 font-semibold">所在地</td>
+                                        <td class="px-4 py-3">〒306-0205<br>茨城県古河市関戸1652-1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 bg-gray-50 font-semibold">TEL</td>
+                                        <td class="px-4 py-3">0280-92-3011</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 bg-gray-50 font-semibold">FAX</td>
+                                        <td class="px-4 py-3">0280-92-5643</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 bg-gray-50 font-semibold">代表者</td>
+                                        <td class="px-4 py-3">代表取締役 長濵 孝</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 bg-gray-50 font-semibold">設立</td>
+                                        <td class="px-4 py-3">1977年6月</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 bg-gray-50 font-semibold">資本金</td>
+                                        <td class="px-4 py-3">2,000万円</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 bg-gray-50 font-semibold">事業内容</td>
+                                        <td class="px-4 py-3">プラスチック精密部品成形加工<br>プラスチック金型設計製作</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 bg-gray-50 font-semibold">従業員数</td>
+                                        <td class="px-4 py-3">35名</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 bg-gray-50 font-semibold">取引銀行</td>
+                                        <td class="px-4 py-3">常陽銀行 古河支店<br>筑波銀行 古河支店</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 bg-gray-50 font-semibold">ISO</td>
+                                        <td class="px-4 py-3">ISO9001：2015 認証取得</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <!-- Googleマップ -->
+                            <div class="h-96 bg-gray-200 rounded-lg overflow-hidden">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3217.8!2d139.7!3d36.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDEyJzAwLjAiTiAxMznCsDQyJzAwLjAiRQ!5e0!3m2!1sja!2sjp!4v1620000000000!5m2!1sja!2sjp" 
+                                    width="100%" 
+                                    height="100%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 沿革タブの内容 -->
+                <div id="history-content" class="tab-content hidden">
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-24 font-bold text-blue-600">1970年4月</div>
+                            <div class="text-gray-600">長浜合成工業所を創立</div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-24 font-bold text-blue-600">1977年6月</div>
+                            <div class="text-gray-600">株式会社長浜合成工業所を設立</div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-24 font-bold text-blue-600">1988年7月</div>
+                            <div class="text-gray-600">現在地に本社工場を移転</div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-24 font-bold text-blue-600">2000年8月</div>
+                            <div class="text-gray-600">ISO9002：1994を認証取得</div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-24 font-bold text-blue-600">2003年8月</div>
+                            <div class="text-gray-600">ISO9001：2000に更新</div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-24 font-bold text-blue-600">2009年8月</div>
+                            <div class="text-gray-600">ISO9001：2008に更新</div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-24 font-bold text-blue-600">2010年4月</div>
+                            <div class="text-gray-600">環境方針を制定</div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-24 font-bold text-blue-600">2017年7月</div>
+                            <div class="text-gray-600">ISO9001：2015に更新</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 採用情報セクション -->
+    <section id="saiyo" class="py-20 bg-blue-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="images/young-professionals.jpg" alt="ものづくりの未来を担う若手技術者" class="w-full h-full object-cover opacity-20">
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- キャッチコピー -->
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-6xl font-bold mb-6">ものづくりの未来を、共に。</h2>
+                <p class="text-xl">共に成長し、未来を創造していく仲間を募集しています。</p>
+            </div>
+
+            <h3 class="text-3xl font-bold text-center mb-16">採用情報</h3>
+
+            <!-- 募集要項 -->
+            <div class="max-w-4xl mx-auto">
+                <h4 class="text-2xl font-bold mb-8">募集要項</h4>
+                <div class="bg-white bg-opacity-10 rounded-lg p-8">
+                    <table class="w-full">
+                        <tbody class="divide-y divide-white divide-opacity-20">
+                            <tr>
+                                <td class="px-4 py-4 font-semibold w-1/3">募集職種</td>
+                                <td class="px-4 py-4">①成形技術者 ②金型技術者 ③品質保証</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-4 font-semibold">仕事内容</td>
+                                <td class="px-4 py-4">①プラスチック射出成形機のオペレーション<br>②プラスチック金型のメンテナンス・修理<br>③プラスチック製品の品質管理</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-4 font-semibold">雇用形態</td>
+                                <td class="px-4 py-4">正社員</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-4 font-semibold">勤務地</td>
+                                <td class="px-4 py-4">本社工場（茨城県古河市）</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-4 font-semibold">勤務時間</td>
+                                <td class="px-4 py-4">8:00～17:00</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-4 font-semibold">給与</td>
+                                <td class="px-4 py-4">当社規定による</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-4 font-semibold">休日</td>
+                                <td class="px-4 py-4">日曜、祝日、土曜（月2～3回）、GW、夏季、年末年始</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-4 font-semibold">応募方法</td>
+                                <td class="px-4 py-4">まずは、お電話またはお問合わせフォームよりご連絡下さい。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="#contact" class="inline-block bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                        採用についてお問い合わせ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせセクション -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">お問い合わせ</h2>
+            <p class="text-center text-gray-600 mb-16 text-lg">
+                製品・技術に関するご相談、お見積り、採用に関するご質問など、お気軽にお問い合わせください。
+            </p>
+
+            <div class="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+                <!-- お問い合わせフォーム -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 text-gray-800">お問い合わせフォーム</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <!-- お問い合わせ種別 -->
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">お問い合わせ種別 *</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="inquiry_type" value="製品について" class="mr-2" required>
+                                    <span>製品について</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="inquiry_type" value="採用について" class="mr-2" required>
+                                    <span>採用について</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="inquiry_type" value="その他" class="mr-2" required>
+                                    <span>その他</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- 会社名 -->
+                        <div>
+                            <label for="company" class="block text-sm font-semibold text-gray-700 mb-2">会社名</label>
+                            <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+
+                        <!-- お名前 -->
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">お名前 *</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+
+                        <!-- メールアドレス -->
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">メールアドレス *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+
+                        <!-- 電話番号 -->
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">電話番号</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+
+                        <!-- お問い合わせ内容 -->
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">お問い合わせ内容 *</label>
+                            <textarea id="message" name="message" rows="6" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                        </div>
+
+                        <!-- プライバシーポリシー -->
+                        <div>
+                            <label class="flex items-start">
+                                <input type="checkbox" id="privacy" name="privacy" required class="mt-1 mr-2">
+                                <span class="text-sm text-gray-600">プライバシーポリシーに同意します *</span>
+                            </label>
+                        </div>
+
+                        <!-- 送信ボタン -->
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-colors">
+                            送信する
+                        </button>
+                    </form>
+                </div>
+
+                <!-- 連絡先情報 -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 text-gray-800">お電話でのお問い合わせ</h3>
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="space-y-4">
+                            <h4 class="text-xl font-bold text-gray-800">株式会社 長浜合成工業所</h4>
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-map-marker-alt text-blue-600 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">所在地</p>
+                                    <p class="text-gray-600">〒306-0205<br>茨城県古河市関戸1652-1</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-phone text-blue-600"></i>
+                                <div>
+                                    <p class="font-semibold">電話番号</p>
+                                    <p class="text-gray-600 text-lg">TEL. 0280-92-3011</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-fax text-blue-600"></i>
+                                <div>
+                                    <p class="font-semibold">FAX番号</p>
+                                    <p class="text-gray-600">FAX. 0280-92-5643</p>
+                                </div>
+                            </div>
+                            <div class="mt-8 p-4 bg-blue-50 rounded-lg">
+                                <p class="text-sm text-blue-800">
+                                    <i class="fas fa-clock mr-2"></i>
+                                    営業時間: 8:00〜17:00（土日祝除く）
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 会社情報 -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">株式会社 長浜合成工業所</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        〒306-0205<br>
+                        茨城県古河市関戸1652-1<br>
+                        TEL. 0280-92-3011
+                    </p>
+                </div>
+
+                <!-- サイトマップ -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">サイトマップ</h4>
+                    <nav class="space-y-2">
+                        <a href="#home" class="block text-gray-300 hover:text-white transition-colors">ホーム</a>
+                        <a href="#jigyo" class="block text-gray-300 hover:text-white transition-colors">事業紹介</a>
+                        <a href="#kaisya" class="block text-gray-300 hover:text-white transition-colors">会社情報</a>
+                        <a href="#saiyo" class="block text-gray-300 hover:text-white transition-colors">採用情報</a>
+                        <a href="#contact" class="block text-gray-300 hover:text-white transition-colors">お問い合わせ</a>
+                    </nav>
+                </div>
+
+                <!-- 空のコラム -->
+                <div></div>
+            </div>
+
+            <!-- コピーライト -->
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    © NAGAHAMA PLASTIC PRODUCTION CO.,LTD.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
